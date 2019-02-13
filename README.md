@@ -1,4 +1,5 @@
 prerequisites
+
 .create table Log (TimeStamp: datetime, Message: string)
 
 .create table Log ingestion json mapping 'LogMapping' '[{"column":"TimeStamp","path":"$.timestamp","datatype":"datetime"},{"column":"Message","path":"$.message","datatype":"string"}]'
